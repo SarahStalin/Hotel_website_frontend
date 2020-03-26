@@ -1,0 +1,54 @@
+<html>
+<head>
+<style>
+#submit{
+	background:#3b5998;
+	color:white;
+	padding:4px;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <h3>Leave a Comment</h3>
+ <form action="" method="post">
+
+    <label>Your Name:</label><br>
+    <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required"><br>
+
+    <label>Your Email:</label><br>
+    <input type="email" name="email" id="email" value="" tabindex="2" required="required"><br>
+
+    <label>Your Message:</label><br>
+    <textarea name="comment" id="comment" rows="10" tabindex="4" placeholder="Write your comment here..."></textarea><br>
+
+    <!-- comment_post_ID value hard-coded as 1 -->
+    <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" /><br>
+    <input name="submit" type="submit" value="Submit comment" id="submit"/>
+
+  </form> 
+</div>
+
+<?php
+	if(isset($_POST['comment'])==true)
+{
+ 	$_comment= $_POST['comment'];
+	if(empty($comment)==true)
+	{
+	echo 'Please write your comment here....';
+	}
+	else
+	{
+	//comment_entry();
+	echo 'sarah: hey sarah';
+		}
+}
+	
+
+
+?>
+
+</body>
+
+</html>

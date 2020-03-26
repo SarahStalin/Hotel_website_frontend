@@ -1,0 +1,431 @@
+<html>
+<title>Palace of Food</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="hotel.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+
+.nav{
+		
+	background-color:#11ce67;
+
+	overflow:hidden;
+	
+}
+
+	
+	
+.nav a{
+	
+float:left;
+	
+color:#f2f2f2;
+	
+text-align:center;
+	
+padding:14px 16px;
+	
+text-decoration:none;
+
+font-size:17px;
+	
+font-family:Calibri;
+
+}
+
+
+.nav a:hover{
+	
+background-color:#ddd;
+	
+color:black;
+
+}
+
+
+.nav a.active{
+	
+background-color:#4caf50;
+	
+color:white;
+
+}
+
+
+
+.column {
+    float: left;
+    width: 100%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #27BADF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+}
+
+.buttonS {
+    background-color: #F30E0E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 47%;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #F30E0E;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 30%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+ 
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+.footer{
+	position:relative;
+	width:1500;
+}
+
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Palace of Food</a>
+<div class="w3-right w3-hide-small">
+      <a href="homie.html" class="w3-bar-item w3-button">About</a>
+      <a href="RESERVE.html" class="w3-bar-item w3-button">Reserve</a> 
+      <a href="MENU.HTML" class="w3-bar-item w3-button">Menu</a>
+      <a href="CAREERS.HTML" class="w3-bar-item w3-button">Careers</a>
+      <a href="#" class="w3-bar-item w3-button"  onclick=" document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+    </div>
+   
+  </div>
+</div>
+<br><br><br>
+
+
+<div class="container">
+		<h1 class="text-center">ITEMS YOU CAN ORDER</h1>
+</div>
+		<div class="row">
+			<!-- Product  -->
+			<div class="col-md-3 product-grid">
+				<div class="image">
+					<a href="#">
+						<img src="pancakes.jpg" height="200" width="400" class="w-100">
+						<div class="overlay">
+							<div class="detail">Pancakes</div>
+						</div>
+					</a>
+				</div>
+				<h5 class="text-center">Pancakes</h5>
+				<h5 class="text-center">Price: Rs.150.00</h5>
+				<a href="pancake.html" class="btn buy">BUY</a>
+			</div>
+			<!-- ./Product -->
+
+			<!-- Product  -->
+			<div class="col-md-3 product-grid">
+				<div class="image">
+					<a href="#">
+						<img src="french-toast.jpg" height="200" width="400" class="w-100">
+						<div class="overlay">
+							<div class="detail">French Toast</div>
+						</div>
+					</a>
+				</div>
+				<h5 class="text-center">French Toast</h5>
+				<h5 class="text-center">Price: Rs150.00</h5>
+				<a href="French_toast.html" class="btn buy">BUY</a>
+			</div>
+			<!-- ./Product -->
+
+			<!-- Product  -->
+			<div class="col-md-3 product-grid">
+				<div class="image">
+					<a href="#">
+						<img src="acai_bowl.jpg" height="200" width="400" class="w-100">
+						<div class="overlay">
+							<div class="detail">Acai Bowl</div>
+						</div>
+					</a>
+				</div>
+				<h5 class="text-center">Acai Bowl</h5>
+				<h5 class="text-center">Price: Rs150.00</h5>
+				<a href="acai_bowl.html" class="btn buy">BUY</a>
+			</div>
+			<!-- ./Product -->
+
+			<!-- Product  -->
+			<div class="col-md-3 product-grid">
+				<div class="image">
+					<a href="#">
+						<img src="avacado-toast.jpg" height="200" width="400" class="w-100">
+						<div class="overlay">
+							<div class="detail">Avacado Toast</div>
+						</div>
+					</a>
+				</div>
+				<h5 class="text-center">Avacado Toast</h5>
+				<h5 class="text-center">Price: Rs90.00</h5>
+				<a href="avacado_toast.html" class="btn buy">BUY</a>
+			</div>
+		<!-- ./Product -->
+		
+		<!-- Product  -->
+			<div class="col-md-3 product-grid">
+				<div class="image">
+					<a href="#">
+						<img src="waffles.jpg" height="200" width="400" class="w-100">
+						<div class="overlay">
+							<div class="detail">Waffles</div>
+						</div>
+					</a>
+				</div>
+				<h5 class="text-center">Waffles</h5>
+				<h5 class="text-center">Price: Rs90.00</h5>
+				<a href="waffles.html" class="btn buy">BUY</a>
+			</div>
+		<!-- ./Product -->
+		
+		<!-- Product  -->
+			<div class="col-md-3 product-grid">
+				<div class="image">
+					<a href="#">
+						<img src="coffee.jpg" height="200" width="400" class="w-100">
+						<div class="overlay">
+							<div class="detail">Coffee</div>
+						</div>
+					</a>
+				</div>
+				<h5 class="text-center">Coffee</h5>
+				<h5 class="text-center">Price: Rs90.00</h5>
+				<a href="coffee.html" class="btn buy">BUY</a>
+			</div>
+		<!-- ./Product -->
+		
+		<!-- Product  -->
+			<div class="col-md-3 product-grid">
+				<div class="image">
+					<a href="#">
+						<img src="granola.jpeg" height="200" width="400" class="w-100">
+						<div class="overlay">
+							<div class="detail">Granola</div>
+						</div>
+					</a>
+				</div>
+				<h5 class="text-center">Granola</h5>
+				<h5 class="text-center">Price: Rs90.00</h5>
+				<a href="granola.html" class="btn buy">BUY</a>
+			</div>
+		<!-- ./Product -->
+		
+		<!-- Product  -->
+			<div class="col-md-3 product-grid">
+				<div class="image">
+					<a href="#">
+						<img src="tea.jpg" height="200" width="400" class="w-100">
+						<div class="overlay">
+							<div class="detail">Tea</div>
+						</div>
+					</a>
+				</div>
+				<h5 class="text-center">Tea</h5>
+				<h5 class="text-center">Price: Rs90.00</h5>
+				<a href="tea.html" class="btn buy">BUY</a>
+			</div>
+		<!-- ./Product -->
+
+<!-- Footer -->
+<div class=footer>
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p><h3>Follow Us On :   </h3>
+       <img src="Instagram_icon.png" width="50" height="50">
+       <img src="fb.png" width="50" height="50" >
+       <img src="twitter.png" width="50" height="50">
+       <img src="pinit.png" width="50" height="50">
+       <img src="linkedin.png" width="50" height="50"><br>
+</p>
+</footer>
+</div>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+	<h3>   LOGIN</H3>
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="photo.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname" text-align="centre"><b>Username</b></label><br>
+      <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        <br>
+      <button type="submit">LOGIN</button> <button type="submit" class="buttonS" onclick="openWin()">SIGN UP</button>
+      <label><br>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>	
+	
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">Forgot password?</a><span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+function openWin() {
+    window.open("signup.html");
+}
+</script>
+	
+
+     </body>
+</html>

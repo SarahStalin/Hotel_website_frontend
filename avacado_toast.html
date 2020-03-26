@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Palace of Food</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="hotel.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+
+
+/* Set a style for all buttons */
+button {
+    background-color: #DCD6D6;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+</style>
+</head>
+<body>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#" class="w3-bar-item w3-button">Palace of Food</a>
+<div class="w3-right w3-hide-small">
+      <a href="#" class="w3-bar-item w3-button">Cart</a>  </div> 
+  </div>
+</div>
+<br><br><br><br><br><br><br><br><br>
+<div class="pancake">
+<h6><center>Your shopping cart</center></h6>
+<hr>
+<table width="80%" border="0">
+  <tr>
+    <th>Description </th>
+    <th>Quantity       </th>
+    <th>Price</th>
+    <th>Total</th>
+  </tr>
+  <tr>
+   <td align="center" columnspan="2"><img src="avacado-toast.jpg" width="100" height="100"><br>Avacado Toast</td>
+   <td align="center"><input id="box2" type="text" oninput="calculate();" maxlength="4" size="4"/></td>
+   <td align="center"> x 150 &#x20b9;</td>
+   <td align="center"><input id="result" disabled maxlength="0" size="4" /> &#x20b9;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+
+</div>
+<hr>
+<button onclick="myFunction()">Continue</button>
+
+<script>
+function myFunction() {
+    location.replace("confrim.html")
+}
+</script>
+<script>
+
+
+    function calculate() {
+       var myBox1 = 90; 
+        var myBox2 = document.getElementById('box2').value;
+        var result = document.getElementById('result'); 
+        var myResult = myBox1* myBox2;
+          document.getElementById('result').value = myResult;
+
+if(myBox2<=0){
+alert("we dont supply food items below zero or zero");
+}
+
+    }
+
+
+</script>
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+<head></head>
+<body>
+
+<?php
+$inputuser=$_POST['user'];
+$inputpass=$_POST['pass'];
+$user="";
+$password="";
+$connect=mysql_connect("localhost",$user,$password);
+mysql_select_db() or("database not found);
+
+??write query
+
+mysql_close();
+?>

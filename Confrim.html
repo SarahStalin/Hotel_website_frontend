@@ -1,0 +1,75 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+ 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #f1f1f1;
+  font-family: 'Roboto', sans-serif;
+}
+.Confrim {
+  width: 750px;
+  height: 423px;
+  margin: 80px auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+ 
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+    background-color: #27BADF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+}
+
+.buttonS {
+    background-color: #F30E0E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 47%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+</style>
+</head>
+<body>
+<div class="Confrim">
+<p><h1><center>Do you want to confirm your order and <br>
+continue your transcation?</center></h1></p>
+<button onclick="myFunction2()" class="buttonS" >No</button>
+<button onclick="myFunction1()">Yes</button>  
+
+<script>
+function myFunction1() {
+    location.replace("LOGIN.HTML")
+}
+</script>
+<br>
+
+
+<script>
+function myFunction2() {
+    location.replace("MENU.HTML")
+}
+</script>
+</div>
+</body>
+</html>

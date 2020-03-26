@@ -1,0 +1,60 @@
+<html>
+<head></head>
+<body>
+<table width="80%" border="0">
+  <tr>
+    <th>Description </th>
+    <th>Quantity       </th>
+<th>Price</th>
+<th>Total</th>
+  </tr>
+  <tr>
+   <td align="center">Pancakes</td>
+   <td align="center"><input id="box2" type="text" oninput="calculate();" maxlength="4" size="4"/></td>
+   <td align="center"> x 150 &#x20b9;</td>
+   <td align="center"><input id="result" disabled maxlength="4" size="4"/> &#x20b9;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<script>
+
+
+    function calculate() {
+       var myBox1 = 14; 
+        var myBox2 = document.getElementById('box2').value;
+        var result = document.getElementById('result'); 
+        var myResult = myBox1* myBox2;
+          document.getElementById('result').value = myResult;
+
+if(myBox2<=0){
+alert("we dont supply food items below zero or zero");
+}
+}
+function pop(){
+ var myBox2 = document.getElementById('box2').value;
+if(myBox2<=0){
+alert("we dont supply food items below zero or zero");
+}
+
+function funs(){
+	calculate();
+	pop();
+}
+
+}
+</script>
+else
+{
+var myResult="--";
+document.getElementById('result').value=myResult;
+document.write("we dont supply food items below zero or zero");
+}
+
+
+
+</body>
+</html>

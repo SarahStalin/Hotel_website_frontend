@@ -1,0 +1,500 @@
+<html>
+<title>Palace of Food</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="hotel.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+
+}
+
+.submission{
+	background-color:#e6e6ff;
+	color: black;
+	width:95%;
+}
+
+.BrowseUp{
+	background-color:#e6e6ff;
+	color: black;
+	
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #27BADF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+}
+
+.buttonS {
+    background-color: #F30E0E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 47%;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #F30E0E;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 30%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+ 
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Palace of Food</a>
+<div class="w3-right w3-hide-small">
+      <a href="homie.html" class="w3-bar-item w3-button">About</a>
+      <a href="RESERVE.html" class="w3-bar-item w3-button">Reserve</a> 
+      <a href="MENU.HTML" class="w3-bar-item w3-button">Menu</a>
+      <a href="CAREERS.HTML" class="w3-bar-item w3-button">Careers</a>
+      <a href="#" class="w3-bar-item w3-button"  onclick=" document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+    </div>
+   
+  </div>
+</div>
+<body >
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="staff.jpg" alt="Palace of Food Hotel" width="2000" height="1000">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge" style="color:white;">We Are Family</h1>
+  </div>
+</header>
+
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="staff1.jpeg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="1600" height="2000">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Staff</h1><br>
+      <h5 class="w3-center">Family since 1999</h5>
+      <p class="w3-large">"I'm really very happy that I have got wonderful and amazing staff. Really proud to have them."<br>
+			<b><i>........Mr. Nimesh Thakur (Chairman and Founder)</i></b><br>
+			"I have always aimed to keep my staff happy and encourge them to work."<br>
+<b><i>.....Mr. Siddharth Worlikar (Vice Chairman and Co-Founder)</i></b>	 </p> 
+
+    </div>
+  </div>
+</div>
+
+<!-- staff details-->
+<div class="w3-container w3-padding-64" id="contact">
+    <h1>Testimonies</h1><br> <img src="manager.jpeg" width="500" height="300" align="right">
+	<h3>From Manager's desk...</h3>  
+    <p class="w3-text-blue-grey w3-large"><b>"Excellent place to work and Work life balance"</b></p>
+    <p>I have been working at Palace of Food full-time (More than 16 years)</p>
+	<p>Leadership has been and is always best, they are focused for growth,<br>
+ 	with Co growth Individual growth happens automatically,  <br>
+	boss has announced 06 offs and we have excellent work life balance, <br>
+	no chik chik, one of the best place to work.  <br></p>
+		<p><h5><i>........Miss Jennifer Lawernce</i></h5></p>
+
+</div>
+
+<div class="w3-container w3-padding-64" id="contact">
+  <img src="chef (1).jpg" width="500" height="300" align="left" hspace="50"> 
+	<h3>From Chef's Kitchen.....</h3>  
+    <p class="w3-text-blue-grey w3-large"><b>"Beautiful Kitchen and Management which will make you fall in love with..."</b></p>
+    <p>I have been working at Palace of Food (From 12 years)</p>
+	<p>Administration has been and is always best, they are focused for growth,<br>
+ 	with giving superior quality of service also with handsome salary,  <br>
+	boss has been very big support for me. His guide and movtionally words has always made me to stay here. <br>
+	 All the staff of Palace of Food have been my family.<br></p>
+		<p><h5><i>........Mr. Kenny Smith</i></h5></p>
+</div>
+
+<div class="w3-container w3-padding-64" id="contact">
+     <img src="waiter.png" width="500" height="300" align="right">
+	<h3>From Server's View...</h3>  
+    <p class="w3-text-blue-grey w3-large"><b>"Excellent place to work and to earn money"</b></p>
+    <p>I have been working at Palace of Food full-time (From last 10 years)</p>
+	<p>Palace of Food has played very important role in my life as it gives me my living.<br>
+ 	Bosses have always been kind to me and have personally helped me alot. <br>
+	Now this place has become second home and I love working here. <br>
+	</p>
+		<p><h5><i>........Mr. Thomas Adams</i></h5></p>
+</div>
+
+
+<br><br><br>
+<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WE ARE HIRING NOW!! COME AND BE PART OF US...</span></h5>
+
+<div class="form"> 
+
+        APPLICANT'S NAME *: <select name ="title">
+            <option value="select" selected>--Title--</option>
+             <option value="Ms">Miss</option>
+             <option value="Mr">Mr</option>
+             <option value="Mrs">Mrs</option>
+             </select>  <input type="text" name="career_first_name " placeholder="First Name" size="35">   <input type="text" name="career_last_name" placeholder="Last Name" size="35"><br><br>
+         EMAIL ID * : <input type="text" name="career_email_id" placeholder="ENTER VALID EMAIL ADDRESS" size="35"><br><br>
+        CONTACT NUMBER * : <input type="text" name="career_contact" value=""  size="35"/><br><br> 
+
+<img src="team.jpg" width="500" height="300" align="right"> 
+
+         BLOOD GROUP * :  <select name ="blood_grp">
+            <option value="select" selected>--</option>
+             <option value="a1">A+</option>
+             <option value="b1">B+</option>
+             <option value="o1">O+</option>
+             <option value="a1">AB+</option>
+             <option value="b1">A-</option>
+             <option value="ab1">B-</option>
+             <option value="ab2">O-</option>
+             <option value="o2">AB-</option>
+             </select>  
+<br><br>
+        GENDER *:<br>
+
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+       <br><br>
+
+        INTERESTED TO WORK AS:
+       <select name="cars">
+           <option value="select" selected>---SELECT--</option>
+    <option value="chef">chef</option>
+    <option value="waiter">waiter</option>
+    <option value="cashier">cashier</option>
+    <option value="manager">manager</option>
+    <option value="cook">cook</option>
+</select><br><br>
+
+
+  UPLOAD PHOTO * : <input type="file" id="browse_photo" name="fileupload" style="display: none" onChange="PhotoButtonFunction();"/>
+		<input type="text" id="file_photo" readonly="true"/>
+		<input type="button" value="Browse & Upload" id="Browse" onclick="PhotoButtonFunction();" class="BrowseUp"/>
+  <br><br>
+<SCRIPT>
+function PhotoButtonFunction()
+{
+	HandleBrowseClickPhoto();
+	HandlechangePhoto();
+	ValidatePhotoUpload();
+}
+</SCRIPT>
+<script>
+function HandleBrowseClickPhoto()
+{
+    var fileinput = document.getElementById("browse_photo");
+    fileinput.click();
+}
+
+function HandlechangePhoto()
+{
+    var fileinput = document.getElementById("browse_photo");
+    var textinput = document.getElementById("file_photo");
+    textinput.value = fileinput.value;
+}
+
+</script>
+
+<SCRIPT type="text/javascript">
+    function ValidatePhotoUpload() {
+        var fuData = document.getElementById('browse_photo');
+        var FileUploadPath = fuData.value;
+
+//To check if user upload any file
+        if (FileUploadPath == '') {
+            alert("Please upload an image");
+
+        } else {
+            var Extension = FileUploadPath.substring(
+                    FileUploadPath.lastIndexOf('.') + 1).toLowerCase();
+
+//The file uploaded is an image
+
+if (Extension == "gif" || Extension == "png" || Extension == "bmp"
+                    || Extension == "jpeg" || Extension == "jpg") {
+
+// To Display
+                if (fuData.files && fuData.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function(e) {
+                        $('#blah').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(fuData.files[0]);
+                }
+
+            } 
+
+//The file upload is NOT an image
+else {
+                alert("Photo only allows file types of GIF, PNG, JPG, JPEG and BMP. ");
+
+            }
+        }
+    }
+</SCRIPT>
+
+   UPLOAD CV * : <input type="file" id="browse_file" name="fileupload" style="display: none" onChange="ButtonFuctionsCv();"/>
+		<input type="text" id="file_name" readonly="true"/>
+		<input type="button" value="Browse & Upload" id="Browse" onclick="ButtonFunctionsCv();" class="BrowseUp"/>
+  <br><br>
+<script>
+function ButtonFunctionsCv()
+{
+HandleBrowseClick();
+Handlechange();
+ValidateFileUpload();
+
+}
+</script>
+<script>
+function HandleBrowseClick()
+{
+    var fileinput = document.getElementById("browse_file");
+    fileinput.click();
+};
+
+function Handlechange()
+{
+    var fileinput = document.getElementById("browse_file");
+    var textinput = document.getElementById("file_name");
+    textinput.value = fileinput.value;
+};
+
+</script>
+
+<SCRIPT type="text/javascript">
+    function ValidateFileUpload() {
+        var fuData = document.getElementById('browse_file');
+        var FileUploadPath = fuData.value;
+
+//To check if user upload any file
+        if (FileUploadPath == '') {
+            alert("Please upload an document");
+
+        } else {
+            var Extension = FileUploadPath.substring(
+                    FileUploadPath.lastIndexOf('.') + 1).toLowerCase();
+
+//The file uploaded is an image
+
+if (Extension == "docx") {
+
+// To Display
+                if (fuData.files && fuData.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function(e) {
+                        $('#blah').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(fuData.files[0]);
+                }
+
+            } 
+
+//The file upload is NOT an image
+else {
+                alert("Only Word Documents allowed. ");
+
+            }
+        }
+    }
+</SCRIPT>
+     
+<div  >
+ <h6><font color="red"><b>
+1) All marked by * are mandatory to fill.</br>
+        2) All information filled should be true and if found false application can be cancelled. </br>
+ 3) Successful applications will be called for interview.</br></font></b> <br>
+
+
+ <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"><b>I agree to Teams and Conditions.</b></h6>
+</div>
+ <button Id="submit_btn"  onclick="submitData();" class="submission">Submit</button> 
+<script>
+      function submitData(){
+         
+          alert("YOUR APPLICATION HAS BEEN SUBMITTED. THANK YOU FOR SHOWING YOUR INTEREST!");
+          
+      };
+</script>
+
+
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p><h3>Follow Us On :   </h3>
+       <img src="Instagram_icon.png" width="50" height="50">
+       <img src="fb.png" width="50" height="50" >
+       <img src="twitter.png" width="50" height="50">
+       <img src="pinit.png" width="50" height="50">
+       <img src="linkedin.png" width="50" height="50"><br>
+</p>
+</footer>	
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+	<h3>   LOGIN</H3>
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="photo.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname" text-align="centre"><b>Username</b></label><br>
+      <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        <br>
+      <button type="submit">LOGIN</button> <button type="submit" class="buttonS" onclick="openWin()">SIGN UP</button>
+      <label><br>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">Forgot password?</a><span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+function openWin() {
+    window.open("signup.html");
+}
+</script>
+
+</body>
+</html>

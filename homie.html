@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<title>Palace of Food</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="hotel.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #27BADF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+}
+
+.buttonS {
+    background-color: #F30E0E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 47%;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #F30E0E;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 30%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+ 
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Palace of Food</a>
+<div class="w3-right w3-hide-small">
+      <a href="homie.html" class="w3-bar-item w3-button">About</a>
+      <a href="RESERVE.html" class="w3-bar-item w3-button">Reserve</a> 
+      <a href="MENU.HTML" class="w3-bar-item w3-button">Menu</a>
+      <a href="CAREERS.HTML" class="w3-bar-item w3-button">Careers</a>
+      <a href="#" class="w3-bar-item w3-button"  onclick=" document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+    </div>
+   
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="home.jpg" alt="Palace of Food Hotel" width="2000" height="1000">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge" style="color:white;">Palace of Food</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="table.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="1600" height="2000">
+<img src="allset.jpg" class="w3-image w3-opacity-min" width="1600" height="500">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Hotel</h1><br>
+      <h5 class="w3-center">Tradition since 1999</h5>
+      <p class="w3-large">The Palace of Food  was founded in Jaisalmer by Mr. Nimesh Thakur & Mr. Siddharth Worlikar with the ambition to establish amazing hotel, 
+			where people can enjoy multi-cuisine food, spend quality time with family, friends creating beautiful memories.
+			 We only use seasonal ingredients. Hotel has been credited as 5-star hotel by national htoel rating system of India.
+			As Mr. Hemingway once wrote in Times of India,  "When I think of having delicious food, the action always takes place in the Palace of Food.  "		 </p> 
+			 
+      <p class="w3-large w3-text-grey w3-hide-medium">Whether it is a birthday party, anniversaries, or corporate meetings,dinner nights, 
+					The Palace of food has you covered. You don't have to look far for a birthday party hall in Jaisalmer since we have all the 
+					facilities that can make your celebrations memorable.
+					With one of the best hotel in Jaisalmer, bring in your team,friends and family whether it is for seminars, 
+					annual events of just for recreational purposes.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+    <h1 class="w3-center">Our Menu On Glimpse </h1><br>
+      <h4>Rajasthani Meals</h4>
+      <p class="w3-text-grey">Dal Bati Churma, Laal Maas, Mohan Maas, Gatte ki Khichdi, Dil Khushal, Boondo Raita, Rajasthani Kadi</p><br>
+    
+      <h4>Tamil Cuisine</h4>
+      <p class="w3-text-grey">A elaborate menu with steamed rice, variety rice (e.g. tomato rice), dal, sambar, kara kuzhambu, rasam, thayir (curd) along with poriyal (dry fry of vegetables), varuval, kootu , keerai masiyal, aviyal, pachadi, appalam, thovaiyal, oorukai , payasam, betel leaves (or banana leaves) </p><br>
+    
+      <h4>Maharashtrian Thali</h4>
+      <p class="w3-text-grey">Vada Pav, Aluvadi, Sabudana Vada, Bhakarwadi, Kothimbir Vadi, Misal Pav, Pav Bhaji</p><br>
+    
+      <h4>Traditional food of Himachal Pradesh</h4>
+      <p class="w3-text-grey">Sidu, Chha Gosht, Madra, Khatta, Anardana Chicken, Tudkiya Bhath, Akotri, Kullu Trout.</p><br>
+    
+      <h4>Palace Of Food's Special Menu</h4>
+      <p class="w3-text-grey">Royal Meal(Veg/NonVeg), Chef's Special, King's Favorite lunch, Queen's Sweet, Lover's Wine.</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="chef.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO LOCATE US</span></h5>
+<div id="googleMap" class="w3-sepia" style="width:100%;height:400px;"></div>
+
+
+
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <p class="w3-text-blue-grey w3-large"><b>JODHPUR BARMER LINK RD, BH. HOTEL FORT RAJWARA, Jaisalmer, Rajasthan 345001</b></p>
+    <p>You can also contact us by phone 9872311023 or email palace_of_food@catering.com, or you can send us a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="tel" placeholder="Contact Number" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" ></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p><h3>Follow Us On :   </h3>
+       <img src="Instagram_icon.png" width="50" height="50">
+       <img src="fb.png" width="50" height="50" >
+       <img src="twitter.png" width="50" height="50">
+       <img src="pinit.png" width="50" height="50">
+       <img src="linkedin.png" width="50" height="50"><br>
+</p>
+</footer>
+
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(26.9157, 70.9083);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcvR-lIyS8jEVg253Dlzy1mBsblx1rQHQ&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+I have used my API key
+-->
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+	<h3>   LOGIN</H3>
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="photo.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname" text-align="centre"><b>Username</b></label><br>
+      <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        <br>
+      <button type="submit">LOGIN</button> <button type="submit" class="buttonS" onclick="openWin()">SIGN UP</button>
+      <label><br>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">Forgot password?</a><span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+function openWin() {
+    window.open("signup.html");
+}
+</script>
+
+</body>
+</html>
