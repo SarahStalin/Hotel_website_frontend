@@ -1,0 +1,53 @@
+window.QGSettings = {
+   "debug": true, 
+   "push": {
+      "delay": 5, 
+      "requestSelf": false, 
+      "fakePrompt": false, 
+      "secondsBetweenPrompts": 300,
+      "prompt": {
+          "html": window.qg_custom_html
+      }
+   }, 
+   "appId": "db5af2230f8ca4f18e95"
+};
+
+if(window.qg && window.qg.queue) {
+    window.qg.queue.unshift(('init', QGSettings));
+}
+
+if (window.location.href.indexOf('qg_ravi_debug') > 0) {
+  !function(q,g,r,a,p,h,js){
+    if(!q.qg){
+        js=q.qg=function() {
+            js.callmethod ? js.callmethod.call(js, arguments) : js.queue.push(arguments);
+            js.queue = [];
+        }
+    }
+    if(q.qg.initialized){return;}
+    window.qg.queue.unshift(['init',window.QGSettings])
+    p=g.createElement(r);
+    p.async=!0;
+    p.src=a;
+    h=g.getElementsByTagName(r)[0];
+    h.parentNode.insertBefore(p,h);
+    q.qg.initialized = true;
+  }(window,document,'script','https://bot.quantumgraph.com/v3/r/qgraph.v2.js');
+} else {
+  !function(q,g,r,a,p,h,js){
+      if(!q.qg){
+          js=q.qg=function() {
+              js.callmethod ? js.callmethod.call(js, arguments) : js.queue.push(arguments);
+              js.queue = [];
+          }
+      }
+      if(q.qg.initialized){return;}
+      window.qg.queue.unshift(['init',window.QGSettings])
+      p=g.createElement(r);
+      p.async=!0;
+      p.src=a;
+      h=g.getElementsByTagName(r)[0];
+      h.parentNode.insertBefore(p,h);
+      q.qg.initialized = true;
+  }(window,document,'script','//cdn.qgraph.io/v3/r/qgraph.v2.js');
+}
